@@ -5,11 +5,11 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   const name = 'sunguk'; 
   return ( 
-    <View style={styles.container}> 
-      <Text style={styles.text}>My name is {name}</Text>
-      <StatusBar Style="auto" />
+    <View styles={styles.container}> 
+      <Text styles={styles.text}>My name is {name}</Text>
+      <StatusBar styles="auto" />
     </View>>
-    {});
+    );
   }
 
 
@@ -19,5 +19,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    fontSize: 30,
   },
 });
